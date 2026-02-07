@@ -1160,7 +1160,7 @@ body {
     right: 0;
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
-    animation: scanner-sweep 3s ease-in-out infinite;
+    animation: scanner-sweep 4s ease-in-out infinite;
     box-shadow: 0 0 20px var(--neon-cyan);
 }
 
@@ -1168,7 +1168,23 @@ body {
     0%, 100% { transform: translateY(0); opacity: 0; }
     10% { opacity: 1; }
     90% { opacity: 1; }
-    100% { transform: translateY(500px); opacity: 0; }
+    100% { transform: translateY(calc(100vh - 100px)); opacity: 0; }
+}
+
+.holo-scanner-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
+    animation: scanner-sweep-bottom 4s ease-in-out infinite;
+    box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+@keyframes scanner-sweep-bottom {
+    0%, 100% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(-50px); opacity: 0; }
 }
 
 .message-constellation {
