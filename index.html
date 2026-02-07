@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✦ VICKIE MULLA ✦ DIMENSIONAL LOVE PORTAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Parisienne&family=Syncopate:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- AUDIO DIMENSION -->
+    <audio id="cosmicAudio" loop crossorigin="anonymous">
+        <source src="music/Sauti Sol - Feel My Love (Official Audio) SMS [Skiza 9935645] to 811 - Sauti Sol.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- AUDIO VISUALIZER CANVAS -->
+    <canvas id="audioVisualizer"></canvas>
+
+    <!-- PARTICLE SYSTEM LAYERS -->
+    <canvas id="particleLayer1"></canvas>
+    <canvas id="particleLayer2"></canvas>
+    <canvas id="particleLayer3"></canvas>
+
+    <!-- 3D WEBGL BACKGROUND -->
+    <canvas id="webglBackground"></canvas>
+
+    <!-- FLOATING UI ELEMENTS -->
+    <div class="floating-dimension" id="dimension1">∞</div>
+    <div class="floating-dimension" id="dimension2">♥</div>
+    <div class="floating-dimension" id="dimension3">✦</div>
+
+    <!-- NAVIGATION (HOLOGRAPHIC) -->
+    <nav class="holo-nav">
+        <div class="nav-orb" data-section="singularity">
+            <span class="orb-glyph">◉</span>
+            <span class="orb-label">SINGULARITY</span>
+        </div>
+        <div class="nav-orb" data-section="chronicles">
+            <span class="orb-glyph">◈</span>
+            <span class="orb-label">CHRONICLES</span>
+        </div>
+        <div class="nav-orb" data-section="multiverse">
+            <span class="orb-glyph">◊</span>
+            <span class="orb-label">MULTIVERSE</span>
+        </div>
+        <div class="nav-orb" data-section="transmission">
+            <span class="orb-glyph">◉</span>
+            <span class="orb-label">TRANSMISSION</span>
+        </div>
+        <div class="nav-orb" data-section="eternity">
+            <span class="orb-glyph">✦</span>
+            <span class="orb-label">ETERNITY</span>
+        </div>
+    </nav>
+
+    <!-- AUDIO CONTROL (CRYSTAL) -->
+    <button class="crystal-audio" id="audioCrystal">
+        <div class="crystal-inner">
+            <span class="crystal-icon">♫</span>
+            <div class="crystal-waves"></div>
+        </div>
+    </button>
+
+    <!-- SCROLL PROGRESS (ENERGY BEAM) -->
+    <div class="energy-beam">
+        <div class="beam-core"></div>
+        <div class="beam-particles"></div>
+    </div>
+
+    <!-- SECTION 1: THE SINGULARITY (HERO) -->
+    <section id="singularity" class="dimensional-section singularity">
+        <div class="singularity-core">
+            <div class="core-rings">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+                <div class="ring ring-4"></div>
+                <div class="ring ring-5"></div>
+            </div>
+            
+            <div class="singularity-content">
+                <div class="title-constellation">
+                    <span class="constellation-star" style="--delay:0s">✦</span>
+                    <span class="constellation-star" style="--delay:0.2s">✦</span>
+                    <span class="constellation-star" style="--delay:0.4s">✦</span>
+                </div>
+                
+                <h1 class="singularity-title">
+                    <span class="title-layer layer-back">VICKIE</span>
+                    <span class="title-layer layer-mid">VICKIE</span>
+                    <span class="title-layer layer-front">VICKIE</span>
+                </h1>
+                
+                <div class="singularity-subtitle">
+                    <span class="subtitle-fragment" style="--i:1">M</span>
+                    <span class="subtitle-fragment" style="--i:2">U</span>
+                    <span class="subtitle-fragment" style="--i:3">L</span>
+                    <span class="subtitle-fragment" style="--i:4">L</span>
+                    <span class="subtitle-fragment" style="--i:5">A</span>
+                </div>
+                
+                <div class="singularity-deco">
+                    <span class="deco-line"></span>
+                    <span class="deco-orb">◉</span>
+                    <span class="deco-line"></span>
+                </div>
+                
+                <p class="singularity-manifesto">
+                    A being of such luminous perfection that reality itself bends in her presence
+                </p>
+                
+                <div class="singularity-sigil">
+                    <span class="sigil-ring outer"></span>
+                    <span class="sigil-ring inner"></span>
+                    <span class="sigil-core">N♥V</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dimensional-portal portal-left"></div>
+        <div class="dimensional-portal portal-right"></div>
+    </section>
+
+    <!-- SECTION 2: TEMPORAL CHRONICLES -->
+    <section id="chronicles" class="dimensional-section chronicles">
+        <div class="chronicles-header">
+            <h2 class="section-cosmic-title">
+                <span class="cosmic-word">TEMPORAL</span>
+                <span class="cosmic-glyph">◈</span>
+                <span class="cosmic-word">CHRONICLES</span>
+            </h2>
+        </div>
+        
+        <div class="timeline-vortex">
+            <div class="vortex-center"></div>
+            
+            <div class="timeline-event" data-year="2023">
+                <div class="event-wormhole">
+                    <div class="wormhole-ring"></div>
+                    <div class="wormhole-core">01</div>
+                </div>
+                <div class="event-content">
+                    <h3>THE CONVERGENCE</h3>
+                    <p>Two souls recognized each other across the infinite expanse. Time held its breath.</p>
+                    <div class="event-coords">∞.∞.∞</div>
+                </div>
+            </div>
+            
+            <div class="timeline-event" data-year="2023">
+                <div class="event-wormhole">
+                    <div class="wormhole-ring"></div>
+                    <div class="wormhole-core">02</div>
+                </div>
+                <div class="event-content">
+                    <h3>THE RESONANCE</h3>
+                    <p>First words exchanged. Frequencies aligned. The universe whispered: "Yes."</p>
+                    <div class="event-coords">♡.♡.♡</div>
+                </div>
+            </div>
+            
+            <div class="timeline-event" data-year="2024">
+                <div class="event-wormhole">
+                    <div class="wormhole-ring"></div>
+                    <div class="wormhole-core">03</div>
+                </div>
+                <div class="event-content">
+                    <h3>THE ENTANGLEMENT</h3>
+                    <p>Quantum states merged. To think of one is to summon the other instantly.</p>
+                    <div class="event-coords">⚛.⚛.⚛</div>
+                </div>
+            </div>
+            
+            <div class="timeline-event" data-year="∞">
+                <div class="event-wormhole">
+                    <div class="wormhole-ring"></div>
+                    <div class="wormhole-core">∞</div>
+                </div>
+                <div class="event-content">
+                    <h3>THE ETERNAL NOW</h3>
+                    <p>All moments exist simultaneously. Past, present, future—united in love.</p>
+                    <div class="event-coords">✦.✦.✦</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: MULTIVERSE GALLERY -->
+    <section id="multiverse" class="dimensional-section multiverse">
+        <div class="multiverse-header">
+            <h2 class="section-cosmic-title">
+                <span class="cosmic-word">MULTIVERSE</span>
+                <span class="cosmic-glyph">◊</span>
+                <span class="cosmic-word">GALLERY</span>
+            </h2>
+            <p class="multiverse-subtitle">All possible versions of her beauty, collapsed into this dimension</p>
+        </div>
+        
+        <div class="dimensional-grid">
+            <!-- PHOTO 1: THE ORIGIN -->
+            <div class="reality-tile" data-reality="origin">
+                <div class="tile-dimensions">
+                    <div class="dim-layer layer-a"></div>
+                    <div class="dim-layer layer-b"></div>
+                    <div class="dim-layer layer-c"></div>
+                </div>
+                <div class="tile-content">
+                    <div class="photo-singularity">
+                        <!-- Replace with your image -->
+                        <img src="images/vickie-origin.jpg" alt="Vickie - Origin" class="photo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder" style="background: radial-gradient(circle at 30% 30%, #ff006e, #8338ec, #3a86ff); display: none;">
+                            <span>VICKIE.ORIGIN</span>
+                        </div>
+                    </div>
+                    <div class="tile-info">
+                        <h3>REALITY: ORIGIN</h3>
+                        <p>Where it all began. The source code of perfection.</p>
+                        <div class="reality-sigil">◉</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PHOTO 2: THE GOLDEN AGE -->
+            <div class="reality-tile" data-reality="golden">
+                <div class="tile-dimensions">
+                    <div class="dim-layer layer-a"></div>
+                    <div class="dim-layer layer-b"></div>
+                    <div class="dim-layer layer-c"></div>
+                </div>
+                <div class="tile-content">
+                    <div class="photo-singularity">
+                        <img src="images/vickie-golden.jpg" alt="Vickie - Golden Age" class="photo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder" style="background: radial-gradient(circle at 70% 30%, #ffd700, #ff006e, #ffbe0b); display: none;">
+                            <span>VICKIE.AUREATE</span>
+                        </div>
+                    </div>
+                    <div class="tile-info">
+                        <h3>REALITY: AUREATE</h3>
+                        <p>She walks in gold. Light itself bows before her.</p>
+                        <div class="reality-sigil">✦</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PHOTO 3: THE ETHEREAL -->
+            <div class="reality-tile" data-reality="ethereal">
+                <div class="tile-dimensions">
+                    <div class="dim-layer layer-a"></div>
+                    <div class="dim-layer layer-b"></div>
+                    <div class="dim-layer layer-c"></div>
+                </div>
+                <div class="tile-content">
+                    <div class="photo-singularity">
+                        <img src="images/vickie-ethereal.jpg" alt="Vickie - Ethereal" class="photo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder" style="background: radial-gradient(circle at 50% 50%, #a2d2ff, #cdb4db, #ffc8dd); display: none;">
+                            <span>VICKIE.ETHEREAL</span>
+                        </div>
+                    </div>
+                    <div class="tile-info">
+                        <h3>REALITY: ETHEREAL</h3>
+                        <p>Not of this world. A visitor from higher planes.</p>
+                        <div class="reality-sigil">◊</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PHOTO 4: THE NOCTURNAL -->
+            <div class="reality-tile" data-reality="nocturnal">
+                <div class="tile-dimensions">
+                    <div class="dim-layer layer-a"></div>
+                    <div class="dim-layer layer-b"></div>
+                    <div class="dim-layer layer-c"></div>
+                </div>
+                <div class="tile-content">
+                    <div class="photo-singularity">
+                        <img src="images/vickie-nocturnal.jpg" alt="Vickie - Nocturnal" class="photo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder" style="background: radial-gradient(circle at 30% 70%, #240046, #3c096c, #7b2cbf); display: none;">
+                            <span>VICKIE.NOCTURNE</span>
+                        </div>
+                    </div>
+                    <div class="tile-info">
+                        <h3>REALITY: NOCTURNE</h3>
+                        <p>Queen of the infinite night. Stars orbit her dreams.</p>
+                        <div class="reality-sigil">◈</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PHOTO 5: THE SOLAR -->
+            <div class="reality-tile" data-reality="solar">
+                <div class="tile-dimensions">
+                    <div class="dim-layer layer-a"></div>
+                    <div class="dim-layer layer-b"></div>
+                    <div class="dim-layer layer-c"></div>
+                </div>
+                <div class="tile-content">
+                    <div class="photo-singularity">
+                        <img src="images/vickie-solar.jpg" alt="Vickie - Solar" class="photo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder" style="background: radial-gradient(circle at 50% 20%, #ffbe0b, #fb5607, #ff006e); display: none;">
+                            <span>VICKIE.SOLAR</span>
+                        </div>
+                    </div>
+                    <div class="tile-info">
+                        <h3>REALITY: SOLAR</h3>
+                        <p>She is the sun. All life turns toward her warmth.</p>
+                        <div class="reality-sigil">☉</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PHOTO 6: THE LUNAR -->
+            <div class="reality-tile" data-reality="lunar">
+                <div class="tile-dimensions">
+                    <div class="dim-layer layer-a"></div>
+                    <div class="dim-layer layer-b"></div>
+                    <div class="dim-layer layer-c"></div>
+                </div>
+                <div class="tile-content">
+                    <div class="photo-singularity">
+                        <img src="images/vickie-lunar.jpg" alt="Vickie - Lunar" class="photo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder" style="background: radial-gradient(circle at 50% 80%, #e0e1dd, #778da9, #415a77); display: none;">
+                            <span>VICKIE.LUNAR</span>
+                        </div>
+                    </div>
+                    <div class="tile-info">
+                        <h3>REALITY: LUNAR</h3>
+                        <p>Silver mysteries. Tides of the heart obey her phases.</p>
+                        <div class="reality-sigil">☽</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PHOTO 7: THE PRIMORDIAL -->
+            <div class="reality-tile" data-reality="primordial">
+                <div class="tile-dimensions">
+                    <div class="dim-layer layer-a"></div>
+                    <div class="dim-layer layer-b"></div>
+                    <div class="dim-layer layer-c"></div>
+                </div>
+                <div class="tile-content">
+                    <div class="photo-singularity">
+                        <img src="images/vickie-primordial.jpg" alt="Vickie - Primordial" class="photo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder" style="background: radial-gradient(circle at 40% 40%, #2d6a4f, #40916c, #52b788); display: none;">
+                            <span>VICKIE.PRIMAL</span>
+                        </div>
+                    </div>
+                    <div class="tile-info">
+                        <h3>REALITY: PRIMAL</h3>
+                        <p>Before time. Before form. The essence of life itself.</p>
+                        <div class="reality-sigil">❋</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PHOTO 8: THE CELESTIAL -->
+            <div class="reality-tile" data-reality="celestial">
+                <div class="tile-dimensions">
+                    <div class="dim-layer layer-a"></div>
+                    <div class="dim-layer layer-b"></div>
+                    <div class="dim-layer layer-c"></div>
+                </div>
+                <div class="tile-content">
+                    <div class="photo-singularity">
+                        <img src="images/vickie-celestial.jpg" alt="Vickie - Celestial" class="photo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder" style="background: radial-gradient(circle at 60% 40%, #4cc9f0, #4361ee, #3a0ca3, #7209b7); display: none;">
+                            <span>VICKIE.COSMIC</span>
+                        </div>
+                    </div>
+                    <div class="tile-info">
+                        <h3>REALITY: COSMIC</h3>
+                        <p>She contains multitudes. Galaxies in her eyes.</p>
+                        <div class="reality-sigil">✧</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PHOTO 9: THE INFINITE -->
+            <div class="reality-tile" data-reality="infinite">
+                <div class="tile-dimensions">
+                    <div class="dim-layer layer-a"></div>
+                    <div class="dim-layer layer-b"></div>
+                    <div class="dim-layer layer-c"></div>
+                </div>
+                <div class="tile-content">
+                    <div class="photo-singularity">
+                        <img src="images/vickie-infinite.jpg" alt="Vickie - Infinite" class="photo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder" style="background: conic-gradient(from 0deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b, #ff006e); display: none;">
+                            <span>VICKIE.INFINITE</span>
+                        </div>
+                    </div>
+                    <div class="tile-info">
+                        <h3>REALITY: INFINITE</h3>
+                        <p>All possibilities. All versions. All love.</p>
+                        <div class="reality-sigil">∞</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: QUANTUM TRANSMISSION -->
+    <section id="transmission" class="dimensional-section transmission">
+        <div class="transmission-header">
+            <h2 class="section-cosmic-title">
+                <span class="cosmic-word">QUANTUM</span>
+                <span class="cosmic-glyph">◉</span>
+                <span class="cosmic-word">TRANSMISSION</span>
+            </h2>
+        </div>
+        
+        <div class="transmission-interface">
+            <div class="interface-holo">
+                <div class="holo-scanner"></div>
+                <div class="holo-content">
+                    <div class="message-constellation">
+                        <div class="msg-star" style="--x:10%;--y:20%;--delay:0s">✦</div>
+                        <div class="msg-star" style="--x:80%;--y:10%;--delay:0.5s">✦</div>
+                        <div class="msg-star" style="--x:90%;--y:70%;--delay:1s">✦</div>
+                        <div class="msg-star" style="--x:20%;--y:80%;--delay:1.5s">✦</div>
+                    </div>
+                    
+                    <div class="transmission-message">
+                        <div class="msg-header">
+                            <span class="msg-from">FROM: NELSON</span>
+                            <span class="msg-to">TO: VICKIE_MULLA</span>
+                            <span class="msg-priority">PRIORITY: COSMIC</span>
+                        </div>
+                        
+                        <div class="msg-body" id="scrambleText">
+                            <p class="msg-line">My Dearest Vickie,</p>
+                            <p class="msg-line">I can't think of a greater happiness than to be with you all the time without interruption endlessly, even though I feel that here in this world, there's no undisturbed place for our love.</p>
+                            <p class="msg-line">My darling, sometimes I think that loving you is the only thing I was ever meant to do. I sit here in my room, and I imagine you; your face, your hands, the way you ever smiled at something I've said. I wanna be with you, not just in letters, not just in thoughts, but truly to sit beside you and feel the warmth of you.</p>
+                            <p class="msg-line">Give me a daughter with your stubborn heart, or your temper, give our children your dark brown eyes or your enchanted smile so that even when we are gone, the world will find within them all the reasons I loved you.</p>
+                            <p class="msg-line">Happiest 1st Anniversary my precious queen, Many more to Celebrate.</p>
+                            <p class="msg-line">I will love you to infinity & Beyond</p>
+                            <p class="msg-signature">— Love,Nelson Tsuma</p>
+                        </div>
+                        
+                        <div class="msg-footer">
+                            <span class="msg-sigil">◉ N ♥ V ◉</span>
+                            <span class="msg-timestamp">TIMESTAMP: ETERNAL_NOW</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="transmission-beams">
+                <div class="beam beam-1"></div>
+                <div class="beam beam-2"></div>
+                <div class="beam beam-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: THE ETERNAL LOOP -->
+    <section id="eternity" class="dimensional-section eternity">
+        <div class="eternity-vortex">
+            <div class="vortex-layers">
+                <div class="vortex-layer layer-1"></div>
+                <div class="vortex-layer layer-2"></div>
+                <div class="vortex-layer layer-3"></div>
+                <div class="vortex-layer layer-4"></div>
+                <div class="vortex-layer layer-5"></div>
+            </div>
+            
+            <div class="eternity-content">
+                <h2 class="eternity-title">THIS IS NOT THE END</h2>
+                <p class="eternity-subtitle">It is the <span class="eternity-highlight">ETERNAL RETURN</span></p>
+                
+                <div class="love-equation">
+                    <span class="eq-variable">N</span>
+                    <span class="eq-operator">+</span>
+                    <span class="eq-variable">V</span>
+                    <span class="eq-operator">=</span>
+                    <span class="eq-result">∞</span>
+                </div>
+                
+                <div class="eternity-sigils">
+                    <div class="sigil-ring">
+                        <span>♥</span>
+                        <span>♥</span>
+                        <span>♥</span>
+                        <span>♥</span>
+                        <span>♥</span>
+                        <span>♥</span>
+                        <span>♥</span>
+                        <span>♥</span>
+                    </div>
+                </div>
+                
+                <div class="final-mantra">
+                    <span class="mantra-word" style="--i:1">FOREVER</span>
+                    <span class="mantra-word" style="--i:2">IS</span>
+                    <span class="mantra-word" style="--i:3">NOT</span>
+                    <span class="mantra-word" style="--i:4">LONG</span>
+                    <span class="mantra-word" style="--i:5">ENOUGH</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIMENSIONAL FOOTER -->
+    <footer class="cosmic-footer">
+        <div class="footer-singularity">
+            <div class="singularity-rings">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="footer-core">
+                <span class="footer-glyph">N</span>
+                <span class="footer-heart">♥</span>
+                <span class="footer-glyph">V</span>
+            </div>
+        </div>
+        <p class="footer-manifesto">Crafted across dimensions by Nelson for Vickie Mulla</p>
+        <p class="footer-coords">∞.∞.∞ | ETERNAL_NOW</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
