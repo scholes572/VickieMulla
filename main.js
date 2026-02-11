@@ -17,7 +17,7 @@ let audioContext, analyser, dataArray;
 let isPlaying = false;
 
 // Auto-play when page loads
-window.addEventListener('load', async () => {
+async function tryAutoPlay() {
     try {
         audioContext = new (window.AudioContext || window.webkitAudioContext)();
         analyser = audioContext.createAnalyser();
@@ -37,7 +37,11 @@ window.addEventListener('load', async () => {
     } catch (e) {
         console.log('Auto-play blocked. User interaction required.');
     }
-});
+}
+
+// Try to auto-play immediately and also on load
+tryAutoPlay();
+window.addEventListener('load', tryAutoPlay);
 
 audioCrystal.addEventListener('click', async () => {
     if (!audioContext) {
