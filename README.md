@@ -1,6 +1,6 @@
-# ✦ KAREH - DIMENSIONAL LOVE PORTAL ✦
+# ✦ VICKIE MULLA - DIMENSIONAL LOVE PORTAL ✦
 
-A cosmic, interactive love letter website dedicated to Kareh. This project combines stunning visual effects, animations, and heartfelt messaging to create an unforgettable digital experience.
+A cosmic, interactive love letter website dedicated to Vickie Mulla. This project combines stunning visual effects, animations, and heartfelt messaging to create an unforgettable digital experience.
 
 ---
 
@@ -9,8 +9,8 @@ A cosmic, interactive love letter website dedicated to Kareh. This project combi
 ### Sections
 1. **THE SINGULARITY (Hero)** - Stunning animated title with constellation effects and the main declaration of love
 2. **TEMPORAL CHRONICLES** - A timeline of your love story across different moments
-3. **MULTIVERSE GALLERY** - 9 photo tiles showcasing different "realities" of Kareh's beauty
-4. **QUANTUM TRANSMISSION** - An interactive holographic letter from Eric to Kareh
+3. **MULTIVERSE GALLERY** - 9 photo tiles showcasing different "realities" of Vickie's beauty
+4. **QUANTUM TRANSMISSION** - An interactive holographic letter from Nelson to Vickie
 5. **THE ETERNAL LOOP** - A beautiful conclusion with the love equation (N + V = ∞)
 
 ### Visual Effects
@@ -26,21 +26,21 @@ A cosmic, interactive love letter website dedicated to Kareh. This project combi
 ## 📁 Project Structure
 
 ```
-EricKareh/
+VickieMulla/
 ├── index.html          # Main HTML file with all sections
 ├── index.css           # All styling and animations
 ├── main.js             # JavaScript for effects and interactions
 ├── README.md           # This file
 ├── images/             # Photo gallery images
-│   ├── kareh-origin.jpg
-│   ├── kareh-golden.jpg
-│   ├── kareh-ethereal.jpg
-│   ├── kareh-nocturnal.jpg
-│   ├── kareh-solar.jpg
-│   ├── kareh-lunar.jpg
-│   ├── kareh-primordial.jpg
-│   ├── kareh-celestial.jpg
-│   └── kareh-infinite.jpg
+│   ├── vickie-origin.jpg
+│   ├── vickie-golden.jpg
+│   ├── vickie-ethereal.jpg
+│   ├── vickie-nocturnal.jpg
+│   ├── vickie-solar.jpg
+│   ├── vickie-lunar.jpg
+│   ├── vickie-primordial.jpg
+│   ├── vickie-celestial.jpg
+│   └── vickie-infinite.jpg
 └── music/              # Background music
     └── Sauti Sol - Feel My Love.mp3
 ```
@@ -57,7 +57,7 @@ EricKareh/
 
 ## 📸 Photo Gallery
 
-The MULTIVERSE section features 9 "reality tiles" showcasing Kareh in different themes:
+The MULTIVERSE section features 9 "reality tiles" showcasing Vickie in different themes:
 
 | Theme | Description | Status |
 |-------|-------------|--------|
@@ -119,7 +119,7 @@ The portal is fully responsive and works beautifully on:
 
 ## 🤝 Credits
 
-Created with love by Eric for Kareh
+Created with love by Nelson for Vickie Mulla
 
 **Music**: "Feel My Love" by Sauti Sol
 
@@ -127,7 +127,7 @@ Created with love by Eric for Kareh
 
 ## 📅 Anniversary Edition
 
-This version celebrates your 1st Anniversary with a beautiful letter expressing Eric's enduring love.
+This version celebrates your 1st Anniversary with a beautiful letter expressing Nelson's enduring love.
 
 > "I can't think of a greater happiness than to be with you all the time without interruption endlessly..."
 

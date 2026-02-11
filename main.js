@@ -1,6 +1,6 @@
 /**
  * DIMENSIONAL LOVE PORTAL
- * For Kareh Mulla from Eric
+ * For Vickie Mulla from Nelson
  * Reality-bending JavaScript
  */
 
@@ -334,8 +334,8 @@ document.querySelectorAll('.timeline-event, .reality-tile').forEach(el => {
 // ============================================
 
 console.log('%c⚛ DIMENSIONAL LOVE PORTAL ⚛', 'font-size: 30px; background: linear-gradient(90deg, #ff006e, #8338ec, #3a86ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;');
-console.log('%cFor Kareh', 'font-size: 20px; color: #ff006e;');
-console.log('%cFrom Eric, across all realities', 'font-size: 16px; color: #4cc9f0;');
+console.log('%cFor Vickie Mulla', 'font-size: 20px; color: #ff006e;');
+console.log('%cFrom Nelson, across all realities', 'font-size: 16px; color: #4cc9f0;');
 console.log('%c∞ Love transcends dimensions ∞', 'font-size: 14px; color: #ffbe0b;');
 
 // ============================================
