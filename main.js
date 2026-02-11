@@ -71,24 +71,35 @@ audioCrystal.addEventListener('touchstart', async (e) => {
 });
 
 function visualizeAudio() {
-    if (!isPlaying) return;
-    
     visualizerCanvas.width = window.innerWidth;
     visualizerCanvas.height = window.innerHeight;
     
-    analyser.getByteFrequencyData(dataArray);
-    
+    // Always clear canvas
     visualizerCtx.clearRect(0, 0, visualizerCanvas.width, visualizerCanvas.height);
+    
+    // Get actual audio data if playing, or generate simulated data if paused
+    let audioData;
+    if (isPlaying && analyser) {
+        analyser.getByteFrequencyData(dataArray);
+        audioData = dataArray;
+    } else {
+        // Generate simulated wave data for paused state
+        audioData = new Uint8Array(analyser ? analyser.frequencyBinCount : 64);
+        const time = Date.now() / 1000;
+        for (let i = 0; i < audioData.length; i++) {
+            audioData[i] = Math.sin(time * 2 + i * 0.3) * 30 + Math.sin(time * 3 + i * 0.5) * 20 + 80;
+        }
+    }
     
     // Adjust bar width based on screen size
     const isMobile = window.innerWidth <= 768;
     const barMultiplier = isMobile ? 1.5 : 2.5;
-    const barWidth = (visualizerCanvas.width / dataArray.length) * barMultiplier;
+    const barWidth = (visualizerCanvas.width / audioData.length) * barMultiplier;
     let barHeight;
     let x = 0;
     
-    for (let i = 0; i < dataArray.length; i++) {
-        barHeight = dataArray[i] * 1.5;
+    for (let i = 0; i < audioData.length; i++) {
+        barHeight = audioData[i] * 1.5;
         
         const gradient = visualizerCtx.createLinearGradient(0, visualizerCanvas.height - barHeight, 0, visualizerCanvas.height);
         gradient.addColorStop(0, `hsl(${i * 2}, 100%, 50%)`);
