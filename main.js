@@ -16,6 +16,29 @@ const visualizerCtx = visualizerCanvas.getContext('2d');
 let audioContext, analyser, dataArray;
 let isPlaying = false;
 
+// Auto-play when page loads
+window.addEventListener('load', async () => {
+    try {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        analyser = audioContext.createAnalyser();
+        analyser.fftSize = 256;
+        
+        const source = audioContext.createMediaElementSource(audio);
+        source.connect(analyser);
+        analyser.connect(audioContext.destination);
+        
+        dataArray = new Uint8Array(analyser.frequencyBinCount);
+        
+        await audioContext.resume();
+        await audio.play();
+        audioCrystal.classList.add('playing');
+        isPlaying = true;
+        visualizeAudio();
+    } catch (e) {
+        console.log('Auto-play blocked. User interaction required.');
+    }
+});
+
 audioCrystal.addEventListener('click', async () => {
     if (!audioContext) {
         audioContext = new (window.AudioContext || window.webkitAudioContext)();
